@@ -55,6 +55,7 @@ body {
   border-radius: 8px;
   background: rgb(147, 171, 174);
   padding: 16px 16px;
+  margin-bottom: 10px;
 }
 
 .hr {
@@ -74,6 +75,14 @@ body {
   left: 289px;
   top: 5765px;
 }
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  gap: 32px;
+ padding-top: 200px;
+}
+
 
 .footer {
   background-color: $primary-color;
@@ -118,13 +127,7 @@ body {
     letter-spacing: 3%;
   }
 
-  .footer__bottom {
-    display: flex;
-    justify-content: center;
-    gap: 32px;
-    margin-top: 200px;
-  }
-
+ 
 
 
   &__menu {
@@ -207,6 +210,10 @@ body {
     gap: 24px;
 
 
+  }
+
+  .footer__container {
+ padding: 0px 0px;
   }
 
   .footer__up{

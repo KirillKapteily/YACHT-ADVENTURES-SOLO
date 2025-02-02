@@ -19,9 +19,23 @@
     <header>
         <div class="container">
             <div class="header-wrapper">
-                <div class="logo">
-                    <span class="logo-icon">⛵</span>
-                    <span class="logo-text">YACHT ADVENTURES</span>
+                <div class="container h-p">
+                    <div class="logo">
+                        <span class="logo-icon">⛵</span>
+                        <span class="logo-text">YACHT ADVENTURES</span>
+                    </div>
+                    <div id="sidebar" class="sidebar">
+                        <a href="#" class="closebtn" onclick="closeMenu()">&times;</a>
+                        <a href="#" class="sidebar-link"><span class="logo-icon">⛵</span>
+                            <span class="logo-text">YACHT ADVENTURES</span></a>
+                        <a href="#" class="sidebar-link">About</a>
+                        <a href="#" class="sidebar-link">Yachts</a>
+                        <a href="#" class="sidebar-link">Reviews</a>
+
+
+                    </div>
+                    <button class="openbtn" onclick="openMenu()">☰</button>
+
                 </div>
                 <ul class="header-list">
                     <li class="header-item"><a href="#" class="header-link">About</a></li>
@@ -30,7 +44,6 @@
                 </ul>
             </div>
             <hr class="header-hr">
-        </div>
     </header>
     <main>
         <div class="container">
@@ -72,7 +85,7 @@
                             </li>
                         </ul>
                     </div>
-                    <div class= "hero-wrapper-text">
+                    <div class="hero-wrapper-text">
                         <ul class="hero-list">
                             <li>
                                 <h1 class="hero-title"> Explore the High <br> Seas with
@@ -111,7 +124,7 @@
                                 hand-picked for its comfort, <br> style,
                                 and performance.</p>
 
-                        
+
                         <li class="list-p">
                             <p class="p-item ">From spacious decks to <br> state-of-the-art <br> technology, our yachts
                                 <br>
@@ -456,12 +469,41 @@
                             <!-- <svg class="arrow">
                                 <use href="./img/rent-a-yacht-now/symbol-defs.svg#icon-Arrow-2-Strok" width="18" height="18"></use>
                             </svg> -->
-                            <button class="btn__open" data-modal-close-2>Send &#8594;</button>
-                        </div>
 
+                            <button type="button" class="btn__open" data-modal-open>!Send &#8594;</button>
+
+                            <div class="backdrop is-hidden" data-modal>
+                                <div class="modal">
+                                    <button class="btn__close" data-modal-close>&#215;</button>
+                                    <form>
+                                        <h2 class="modal__title">Thank you</h2>
+                                        <p class="modal__par">Ім'я</p>
+                                        <label><input id="name" name="name"
+                                                class="modal__input"></label>
+                                        <p class="modal__par">Телефон</p>
+                                        <label><input id="phone"
+                                                name="phone" class="modal__input"></label>
+                                        <p class="modal__par">Пошта</p>
+                                        <label><input id="mail" name="mail"
+                                                class="modal__input"></label>
+                                        <p class="modal__par">Коментар</p>
+                                        <label><textarea id="comment" name="comment" placeholder="Введіть текст"
+                                                class="modal__area"></textarea></label>
+                                        <br>
+                                        <input type="checkbox" id="Checkbox" name="Checkbox" class="checkbox">
+                                        <label for="Checkbox">
+                                            <p class="terms">Погоджуюся з розсилкою та приймаю <br><a href="index.html"
+                                                    class="modal__link">Умови договору</a></p>
+                                        </label>
+                                    </form>
+            
+                                    <button class="btn__send" data-modal-close-2>Відправити</button>
+                                </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
         </section>
         <section>
             <div class="rewieved-info">
@@ -502,7 +544,7 @@
                         <h4 class="rewieved-title">Ihor Trachuk</h4>
                     </div>
 
-                    <p class="rewieved-p">
+                    <p class="rewieved-p rewieved-p-last">
                         The Azimut 80 was the most luxurious yacht I've ever been on. The cabins were spacious and
                         elegant, and the outdoor areas were perfect for relaxing and entertaining. Worth every penny!
                     </p>
@@ -563,5 +605,7 @@
         <div class="decor__footer"> </div>
     </footer>
 </body>
+<script src="mobilemenu.js"></script>
+<script src="./script.js"></script>
 
 </html>
