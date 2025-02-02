@@ -9,10 +9,10 @@ $font-family: Arial, sans-serif;
   box-sizing: border-box;
 }
 
-body {
-  font-family: $font-family;
-  color: $text-color;
-}
+// body {
+//   font-family: $font-family;
+//   color: $text-color;
+// }
 
 .footer__menu{
   padding-left: 0px;
@@ -34,6 +34,9 @@ body {
   }
 }
 
+footer{
+  background-color: rgb(17, 19, 31);
+}
 
 
 .footer__icon__up {

@@ -17,8 +17,7 @@
 
 <body>
     <header>
-        <div class="container">
-            <div class="header-wrapper">
+        <div> <div class="header-wrapper">
                 <div class="container h-p">
                     <div class="logo">
                         <span class="logo-icon">⛵</span>
@@ -44,11 +43,13 @@
                 </ul>
             </div>
             <hr class="header-hr">
+
+        </div>
+           
     </header>
     <main>
-        <div class="container">
-
-            <section class="first-sec">
+       <div class="container">
+<section class="first-sec">
                 <div class="hero-wrapper">
                     <div>
                         <img class="img-media" src="./img/jpg/baground1.png" alt="hero-background" width="340px"
@@ -56,11 +57,11 @@
                     </div>
                     <div>
                         <ul class="list-persons">
-                            <li><img class="img-wrapper" src="./img/jpg/man2.png" alt="man2" width="56px" height="56px">
+                            <li><img class="img-wrapper" src="./img/jpg/man2.png" alt="man2" width="56px" height="56px" class="person-1">
                             </li>
                             <li><img class="img-wrapper" src="./img/jpg/woman@1x.png" alt="woman" width="56px"
-                                    height="56px"></li>
-                            <li><img class="img-wrapper" src="./img/jpg/man1.png" alt="man" width="56px" height="56px">
+                                    height="56px" class="person-2"></li>
+                            <li><img class="img-wrapper" src="./img/jpg/man1.png" alt="man" width="56px" height="56px" class="person-3">
                             </li>
                         </ul>
                     </div>
@@ -71,7 +72,7 @@
                             </li>
 
                             <li class="card-hero-item">
-                                <img class="card-hero-img" src="./img/jpg/img-man.jpg" alt="man" width="180px"
+                                <img class="card-hero-img" src="./img/jpg/mancard.png" alt="man" width="180px"
                                     height="180px">
                             </li>
                             <li class="card-hero-item">
@@ -85,11 +86,12 @@
                             </li>
                         </ul>
                     </div>
+                    <div class="hero-decor"> </div>
                     <div class="hero-wrapper-text">
                         <ul class="hero-list">
                             <li>
                                 <h1 class="hero-title"> Explore the High <br> Seas with
-                                    Our Luxury <br> Yacht Rentals</h1>
+                                    <span class="italic-text">Our Luxury <br> Yacht </span>Rentals</h1>
                             </li>
                             <li>
                                 <p class="hero-p"> Experience the freedom and luxury of yachting on the open seas.
@@ -118,7 +120,7 @@
                 <section>
                     <ul class="hero-feel-list">
                         <li>
-                            <p class="p-hero-feel">Yacht Adventures fleet is here to take <br> you on the ultimate
+                            <p class="p-hero-feel"><span class="italic-text">Yacht Adventures</span> fleet is here to take <br> you on the ultimate
                                 adventure.
                                 Each <br> yacht is
                                 hand-picked for its comfort, <br> style,
@@ -461,7 +463,7 @@
                                 <p class="rent__par">Phone number</p>
                                 <label><input id="phone" name="phone" class="rent__input"></label>
                                 <p class="rent__par par__area">Comment</p>
-                                <label><textarea id="comment" name="comment" placeholder="Введіть текст"
+                                <label><textarea id="comment" name="comment" placeholder=" "
                                         class="rent__area"></textarea></label>
                                 <br>
                             </form>
@@ -470,8 +472,9 @@
                                 <use href="./img/rent-a-yacht-now/symbol-defs.svg#icon-Arrow-2-Strok" width="18" height="18"></use>
                             </svg> -->
 
-                            <button type="button" class="btn__open" data-modal-open>!Send &#8594;</button>
-
+                            <button type="button" class="btn__open" data-modal-open>Send &#8594;</button>
+                            <!-- <div class="rent-decor"></div> -->
+<!-- 
                             <div class="backdrop is-hidden" data-modal>
                                 <div class="modal">
                                     <button class="btn__close" data-modal-close>&#215;</button>
@@ -501,13 +504,13 @@
                                 </div>
                             </div>
 
-                        </div>
+                        </div> -->
                     </div>
                 </div>
         </section>
         <section>
             <div class="rewieved-info">
-                <h2 class="rew-title">Yacht Adventures take pride in <br>providing the best possible service <br>and
+                <h2 class="rew-title"><span class="italic-text">Yacht Adventures</span> take pride in <br>providing the best possible service <br>and
                     experience to
                     our customers</h2>
                 <p class="rew-p">Our customers have enjoyed <br>unforgettable moments on our yachts. <br>Don't just take
@@ -552,6 +555,9 @@
             </ul>
         </section>
         </div>
+       </div>
+
+            
 
     </main>
     <footer>
